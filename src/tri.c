@@ -1,4 +1,5 @@
 #include <tri.h>
+#include <stdio.h>
 
 void triBulle(int *tab, int n)
 {
@@ -35,4 +36,15 @@ void triSelection(int *tab, int n)
 void triInsersion(int *tab, int n)
 {
 
+}
+
+void afficheTableau(int *tab, int n)
+{
+	int i;
+	printf("---####---\n");
+	for(i = 0; i < n; i++)
+		printf("[%c]\n",tab[i]);
+	printf("---####---\n");
+
+	return;
 }

@@ -4,5 +4,6 @@
 void triBulle(int*, int);
 void triSelection(int*, int);
 void triInsersion(int*, int);
+void afficheTableau(int*, int);
 
 #endif

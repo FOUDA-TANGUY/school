@@ -8,10 +8,13 @@ int main(void)
 	srand((unsigned int)time(NULL));
 
 
-	int tab[N] = {0,1,7,6,5,4,3,2,1,0};
+	int tab[N];
 	int i;
 	for( i = 0; i < N; i++)
-		printf("%c\n", 65 + (int)rand()%26);
-	
+		tab[i] = (65 + (int)rand()%26);
+
+	afficheTableau(tab,N);
+	triSelection(tab,N);
+	afficheTableau(tab,N);
 	return 0;
 }
