@@ -12,5 +12,6 @@ int main(void)
 	int i;
 	for( i = 0; i < N; i++)
 		printf("%c\n", 65 + (int)rand()%26);
+	
 	return 0;
 }
