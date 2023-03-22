@@ -1,11 +1,15 @@
-build: main.o tri.o
+build: main.o eleve.o
 	gcc ./obj/*.o -o ./bin/programme
 
 main.o:
 	gcc -o ./obj/main.o -c ./src/main.c -I ./include/
 
-tri.o:
-	gcc -o ./obj/tri.o -c ./src/tri.c -I ./include/
+eleve.o:
+	gcc -o ./obj/eleve.o -c ./src/eleve.c -I ./include/
+
+matiere.o:
+	gcc -o ./obj/matiere.o -c ./src/matiere.c -I ./include/
+	
 run:
 	./bin/programme
 
