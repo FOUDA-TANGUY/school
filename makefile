@@ -6,6 +6,9 @@ main.o:
 
 eleve.o:
 	gcc -o ./obj/eleve.o -c ./src/eleve.c -I ./include/
+
+matiere.o:
+	gcc -o ./obj/matiere.o -c ./src/matiere.c -I ./include/
 	
 run:
 	./bin/programme
