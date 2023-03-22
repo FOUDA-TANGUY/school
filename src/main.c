@@ -1,20 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <tri.h>
-#define N 10
+#include <eleve.h>
 int main(void)
 {
-	srand((unsigned int)time(NULL));
+	eleve el;
+	unsigned char nom[LEN];
 
 
-	int tab[N];
-	int i;
-	for( i = 0; i < N; i++)
-		tab[i] = (65 + (int)rand()%26);
-
-	afficheTableau(tab,N);
-	triSelection(tab,N);
-	afficheTableau(tab,N);
+	
+	
+	scanf("%s",nom);
+	setEleveNom(&el,nom);
+	scanf("%s",nom);
+	setElevePrenom(&el,nom);
+	printf("%s\n", el.nom);
+	printf("%s\n", el.prenom);
 	return 0;
 }
